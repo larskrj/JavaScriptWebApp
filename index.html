@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Backbone App</title>
+    <link href="Content/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="Content/Site.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+	<h2></h2>
+	<section id="messages"></section>
+    <section id="content"></section>
+    <section><a href="Scripts/tests/runner.html">Jasmine spec runner</a></section>
+</div>
+
+<script id="person-index-template" type="text/x-handlebars-template">
+  <table id="personList" class="table table-striped">
+  <thead><tr><th>Endre</th><th>Navn</th><th>Alder</th></tr></thead>
+  <tbody>
+     {{#each persons}}
+        <tr><td><a href='#edit/{{id}}' class='icon-pencil'></a> </td><td>{{ name }}</td><td>{{ age }}</td></tr>
+      {{/each}}
+  </tbody>
+  </table>
+  <div><a href="#add" class="btn">Ny person</a></div>
+</script>
+
+<script id="person-edit-template" type="text/x-handlebars-template">      
+    <div class="form-horizontal well">
+    <fieldset>
+            <legend></legend>    	
+            {{#if id}}
+            <div class="right"><button href='#' id='deletePerson' class='btn' data-person-id='{{id}}'>Slett</button></div>
+            {{/if}}
+            <div class="control-group">
+    	    <label class="control-label" for='name'>Navn:</label>
+            <div class="controls"><input id='name' type='text' value='{{name}}' /></div>
+    	    <label class="control-label" for='age'>Alder:</label>
+    	    <div class="controls"><input id='age' type='text' value='{{age}}' /></div>
+            <div class="form-actions">
+                <button class="btn btn-primary" type="submit" id="savePerson">Lagre</button>
+                <button class="btn" id="cancelEditPerson">Avbryt</button>
+            </div>    	
+        </div>
+    </fieldset>
+    
+    </div>
+</script>
+<script data-main="scripts/main" src="scripts/require/require.js" type="text/javascript"></script>
+<!-- bytt ut med scripts/main-built for minimert script -->
+</body></html>

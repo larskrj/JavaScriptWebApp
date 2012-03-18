@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.Net;
 
-namespace Api
+namespace JavaScriptWebApp
 {
 	public class CorsHandler : DelegatingHandler
 	{

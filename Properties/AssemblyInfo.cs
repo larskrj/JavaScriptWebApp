@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Mvc4App")]
+[assembly: AssemblyTitle("JavaScriptWebApp")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Mvc4App")]
+[assembly: AssemblyProduct("JavaScriptWebApp")]
 [assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("54fe80d4-4354-4544-adf8-cb5875790000")]
+[assembly: Guid("86c3b8ab-c55b-4cdc-99d0-d71295cb1db3")]
 
 // Version information for an assembly consists of the following four values:
 //

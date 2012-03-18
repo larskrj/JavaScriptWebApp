@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Spec Runner</title>
+  <!-- Jasmine lib / testing includes -->
+  <link rel="shortcut icon" type="image/png" href="libs/jasmine-1.1.0/jasmine_favicon.png">
+  <link rel="stylesheet" type="text/css" href="libs/jasmine-1.1.0/jasmine.css">
+  <script type="text/javascript" src="libs/jasmine-1.1.0/jasmine.js"></script>
+  <script type="text/javascript" src="libs/jasmine-1.1.0/jasmine-html.js"></script>
+  <!-- ... -->
+
+  <!-- global lib includes -->
+  <script type="text/javascript" src="../libs/jquery-1.7.1.js"></script>
+  <script type="text/javascript" src="../libs/underscore.js"></script>
+  <script type="text/javascript" src="../libs/backbone.js"></script>
+  <script type="text/javascript" src="../require/require.js"></script>
+  <!-- ... -->
+  
+
+  <script type="text/javascript">
+
+      // This is key!
+      require.config({
+          baseUrl: '../',
+          paths: {
+         "order": "require/order",
+         "jQuery": "require/require-jQuery",
+		 "Underscore": "require/require-underscore",
+		 "Backbone": "require/require-backbone",
+		 "Handlebars": "require/require-handlebars" }
+      });
+
+require([
+    "require/order!libs/jquery-1.7.1",
+    "require/order!libs/underscore",
+    "require/order!libs/backbone",
+    "require/order!libs/handlebars",
+	"require/order!libs/jquery-pubsub",
+    '../tests/person.spec.js'
+    ],
+      function () {
+          $(function () {
+              jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
+              jasmine.getEnv().execute();
+          });
+      });
+
+  </script>
+</head>
+<body>
+  <!-- empty on purpose -->
+</body>
+</html>

@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using Api.Models;
 
-namespace Api.Controllers
+namespace JavaScriptWebApp.Controllers
 {
     public class PersonController : ApiController
     {
@@ -16,7 +16,6 @@ namespace Api.Controllers
     	static PersonController()
     	{
 			AddPerson(new Person { Name = "Lars K.", Age = 33 });
-			AddPerson(new Person { Name = "Stine.", Age = 31 });
     	}
 		
 		// GET /api/person
