@@ -162,6 +162,13 @@
     <Content Include="Scripts\require\config.js" />
     <Content Include="Scripts\require\main-built.js" />
     <Content Include="Scripts\require\main.js" />
+    <Content Include="Scripts\require\order.js" />
+    <Content Include="Scripts\require\r.js" />
+    <Content Include="Scripts\require\require-backbone.js" />
+    <Content Include="Scripts\require\require-handlebars.js" />
+    <Content Include="Scripts\require\require-jQuery.js" />
+    <Content Include="Scripts\require\require-underscore.js" />
+    <Content Include="Scripts\require\require.js" />
     <Content Include="Scripts\require\Site.css" />
     <Content Include="Scripts\require\_references.js" />
     <Content Include="Scripts\tests\libs\jasmine-1.1.0\jasmine-html.js" />
