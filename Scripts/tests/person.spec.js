@@ -3,12 +3,16 @@
 	describe("Person model", function() {
 		it("should use an empty string as default attributes for name", function() {
 			var person = new Person();
+			
+			// Act
 			expect(person.get("name"))
 				.toEqual("");
 		});
 		
 		it("should use 0 as default attributes for age", function() {
 			var person = new Person();
+
+			// Act
 			expect(person.get("age"))
 				.toEqual(0);
 		});
