@@ -15,13 +15,14 @@ namespace JavaScriptWebApp.Controllers
 
     	static PersonController()
     	{
-			AddPerson(new Person { Name = "Lars K.", Age = 33 });
+			AddPerson(new Person { Name = "Nils", Age = 23 });
+			AddPerson(new Person { Name = "Ole", Age = 41 });
     	}
 		
 		// GET /api/person
         public IEnumerable<Person> Get()
         {
-        	return persons;
+        	return persons.OrderBy(o => o.Id);
         }
 
         // GET /api/person/5
