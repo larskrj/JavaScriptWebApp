@@ -1,4 +1,6 @@
-﻿define(["jQuery",
+﻿//globals: 
+
+define(["jQuery",
 		"Underscore",
 		"Backbone",
 		"./person",

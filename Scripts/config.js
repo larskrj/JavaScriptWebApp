@@ -1,6 +1,6 @@
 ﻿define([], function() {
 	return {
-		apiBaseUrl: "http://restapi.apphb.com/api"  
+		apiBaseUrl: "/api"  
 	};
 });
 

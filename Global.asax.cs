@@ -56,7 +56,7 @@ namespace JavaScriptWebApp
 		public static void ConfigureApi(HttpConfiguration config)
 		{
 			var index = config.Formatters.IndexOf(config.Formatters.JsonFormatter);
-			config.Formatters[index] = new JsonCamelCaseFormatter();
+			//config.Formatters[index] = new JsonCamelCaseFormatter();
 
 			config.MessageHandlers.Add(new CorsHandler());
 		}

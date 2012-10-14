@@ -10,7 +10,7 @@ using Newtonsoft.Json.Serialization;
 
 namespace JavaScriptWebApp
 {
-	public class JsonCamelCaseFormatter : MediaTypeFormatter
+	/*public class JsonCamelCaseFormatter : MediaTypeFormatter
 	{
 		private readonly JsonSerializerSettings jsonSerializerSettings;
 
@@ -79,5 +79,5 @@ namespace JavaScriptWebApp
 					}
 				});
 		}
-	}
+	}*/
 }
