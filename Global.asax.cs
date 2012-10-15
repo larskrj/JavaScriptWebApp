@@ -1,6 +1,5 @@
 ﻿using System.Web.Http;
 using System.Web.Mvc;
-using System.Web.Optimization;
 using System.Web.Routing;
 
 namespace JavaScriptWebApp
@@ -49,8 +48,6 @@ namespace JavaScriptWebApp
 			
 			// Replace the default JsonFormatter with our custom one
 			ConfigureApi(config);
-
-			BundleTable.Bundles.RegisterTemplateBundles();
 		}
 
 		public static void ConfigureApi(HttpConfiguration config)
